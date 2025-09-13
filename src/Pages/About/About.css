@@ -1,0 +1,51 @@
+.about {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 30px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-values {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.value-card {
+  background: white;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 24px;
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card h3 {
+  color: red;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  font-size: 14px;
+  color: #444;
+}

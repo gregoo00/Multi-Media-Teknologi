@@ -1,0 +1,41 @@
+.footer {
+  background-color: red;
+  color: white;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-logo h1 {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #f9f9f9;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
+}

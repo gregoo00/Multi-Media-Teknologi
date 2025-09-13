@@ -1,0 +1,66 @@
+.navbar {
+  background-color: #e63946; /* merah modern */
+  padding: 18px 32px; /* lebih besar */
+  color: white;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  left: 32px;
+  display: flex;
+  align-items: center; /* supaya teks sejajar vertikal dengan logo */
+  gap: 10px;
+}
+
+.navbar-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* pastikan logo dan teks rata tengah */
+  gap: 10px;
+  text-decoration: none; /* hilangkan underline dari Link */
+}
+
+.navbar-logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none; /* pastikan tidak ada underline */
+  line-height: 1; /* supaya teks tidak terlalu turun */
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-logo-text:hover {
+  color: #ffb4b4;
+}
+
+
+/* Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 28px; /* jarak antar menu lebih lega */
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 18px; /* lebih besar */
+  font-weight: 500;
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffe5e5; /* lembut saat hover */
+}

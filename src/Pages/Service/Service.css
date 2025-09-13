@@ -1,0 +1,40 @@
+.service {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.service h2 {
+  font-size: 28px;
+  color: red;
+  margin-bottom: 30px;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: red;
+  color: white;
+  padding: 24px;
+  border-radius: 12px;
+  width: 220px;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  background-color: darkred;
+}
+
+.service-card p {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 10px;
+  line-height: 1.4;
+}
