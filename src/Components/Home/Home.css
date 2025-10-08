@@ -22,12 +22,64 @@
   color: white;
 }
 
-.homeTitle {
-  font-size: 32px;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.4;
-  color: white;
+/* Hero section improved */
+.home-hero {
+  background-color: white;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  color: #333;
+}
+
+.hero-desc {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-image img:hover {
+  transform: scale(1.03);
 }
 
 /* Sections */
@@ -113,5 +165,81 @@
   font-size: 16px;
   color: #333;
   margin-bottom: 30px;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  background-color: #fff;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 550px;
+  text-align: left;
+}
+
+.about-list {
+  list-style: none;
+  margin-top: 20px;
+  color: #444;
+}
+
+.about-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.about-list li:hover {
+  transform: translateX(6px);
+}
+
+.about-gallery {
+  flex: 1;
+  min-width: 320px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  position: relative;
+}
+
+.about-gallery .gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.about-gallery img:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
