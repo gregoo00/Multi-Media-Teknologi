@@ -1,3 +1,4 @@
+/*
 import React, { useState } from "react";
 import "./Testimonies.css";
 import PageWrapper from "../PageWrapper";
@@ -87,3 +88,4 @@ function Testimony() {
 }
 
 export default Testimony;
+*/

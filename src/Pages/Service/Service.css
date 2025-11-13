@@ -1,40 +1,191 @@
-.service {
-  padding: 60px 20px;
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #ff2e2e 0%,
+    #ffffff 50%,
+    #2a2aff 100%
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Overlay futuristik untuk kontras teks */
+.pricing-section {
+  padding: 80px 5%;
   text-align: center;
-  background-color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  margin: 40px 3%;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
 }
 
-.service h2 {
-  font-size: 28px;
-  color: red;
-  margin-bottom: 30px;
+/* Header */
+.pricing-header h1 {
+  font-size: 2.6rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ff2e2e, 0 0 20px #2a2aff;
 }
 
-.service-list {
+.pricing-header p {
+  color: #f0f0ff;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* Service Selector Buttons */
+.service-selector {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.service-btn {
+  background: transparent;
+  border: 2px solid #ff2e2e;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.8rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-btn:hover,
+.service-btn.active {
+  background: linear-gradient(90deg, #ff2e2e, #2a2aff);
+  box-shadow: 0 0 25px #ff2e2e;
+}
+
+/* Duration Selector */
+.duration-selector {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.duration-selector h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.duration-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.service-card {
-  background-color: red;
+.duration-btn {
+  background: transparent;
+  border: 2px solid #2a2aff;
   color: white;
-  padding: 24px;
-  border-radius: 12px;
-  width: 220px;
-  font-weight: bold;
-  transition: transform 0.2s ease-in-out;
+  font-weight: 500;
+  padding: 0.5rem 1.6rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
 }
 
-.service-card:hover {
+.duration-btn:hover,
+.duration-btn.active {
+  background: linear-gradient(90deg, #2a2aff, #ff2e2e);
+  box-shadow: 0 0 25px #2a2aff;
+}
+
+/* Pricing Grid */
+.pricing-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* Card */
+.pricing-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  border-color: #ff2e2e;
+  box-shadow: 0 0 30px rgba(255, 46, 46, 0.8),
+              0 0 40px rgba(42, 42, 255, 0.6);
+}
+
+/* Title & Price */
+.pricing-card h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.total {
+  color: #d0d0ff;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Features List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+li {
+  margin: 8px 0;
+  color: #eaeaff;
+  font-size: 0.95rem;
+}
+
+/* Button */
+.choose-btn {
+  background: linear-gradient(90deg, #ff2e2e, #2a2aff);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.choose-btn:hover {
+  background: linear-gradient(90deg, #2a2aff, #ff2e2e);
+  box-shadow: 0 0 25px #2a2aff;
   transform: scale(1.05);
-  background-color: darkred;
 }
 
-.service-card p {
-  font-size: 14px;
-  font-weight: normal;
-  margin-top: 10px;
-  line-height: 1.4;
+/* Responsive */
+@media (max-width: 768px) {
+  .pricing-section {
+    margin: 20px 5%;
+    padding: 60px 4%;
+  }
+
+  .pricing-header h1 {
+    font-size: 2rem;
+  }
+
+  .pricing-card {
+    padding: 1.5rem;
+  }
 }

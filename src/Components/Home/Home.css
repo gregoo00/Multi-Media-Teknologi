@@ -1,14 +1,105 @@
+
+/* === Global wrapper untuk gradient besar === */
+.home-wrapper {
+  background: linear-gradient(135deg, #ff2e2e 0%, #ffffff 50%, #2a2aff 100%);
+  min-height: 100vh;
+  width: 100%;
+  color: #222;
+}
+
+/* Semua section menempel halus di satu gradient */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+  backdrop-filter: blur(3px);
+}
+
+/* Section Title tetap merah */
+.section-title span {
+  color: red;
+}
+
+/* Kartu advantage & testimony tetap sama */
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.advantage-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* Testimonies */
+.testimony-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 40px;
+}
+.testimony-card {
+  border-radius: 12px;
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+.testimony-card:hover {
+  transform: scale(1.05);
+}
+.testimony-img {
+  width: 80px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+/* About */
+.about-section {
+  text-align: left;
+}
+.about-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-gallery {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.about-gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
 /* Hero section */
 .home {
   position: relative;
   height: 100vh;
-  background: linear-gradient(rgba(255,0,0,0.6), rgba(255,0,0,0.6)), 
-              url("https://source.unsplash.com/1600x900/?technology,office") no-repeat center center/cover;
-  display: flex;
+  background: linear-gradient(135deg, #ff2e2e 0%, #ffffff 50%, #2a2aff 100%);
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
 }
 
 .textDiv {
@@ -24,7 +115,6 @@
 
 /* Hero section improved */
 .home-hero {
-  background-color: white;
   padding: 80px 10%;
   display: flex;
   align-items: center;
@@ -86,7 +176,6 @@
 .company-section {
   padding: 60px 20px;
   text-align: center;
-  background-color: white;
 }
 
 .company-section.alt-bg {
@@ -169,7 +258,7 @@
 
 /* ===== ABOUT SECTION ===== */
 .about-section {
-  background-color: #fff;
+  background: linear-gradient(135deg, #ff2e2e 0%, #ffffff 50%, #2a2aff 100%);
   padding: 80px 10%;
   display: flex;
   justify-content: center;
@@ -243,3 +332,129 @@
   }
 }
 
+/* === ADVANTAGE SECTION === */
+.advantage-section {
+  padding: 80px 10%;
+  text-align: center;
+background: linear-gradient(135deg, #ff2e2e 0%, #ffffff 50%, #2a2aff 100%);  transition: background 0.5s ease-in-out;
+}
+
+.advantage-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.advantage-title span {
+  color: red;
+}
+
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.advantage-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.advantage-icon {
+  font-size: 2.5rem;
+  color: red;
+  margin-bottom: 1rem;
+}
+
+/* === TESTIMONIES === */
+.testimony {
+  text-align: center;
+  padding: 80px 10%;
+background: linear-gradient(135deg, #ff2e2e 0%, #ffffff 50%, #2a2aff 100%);}
+
+.testimony-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.testimony-card {
+  width: 100%;
+  max-width: 300px;
+  height: 160px;
+  border-radius: 12px;
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimony-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.testimony-img {
+  width: 80px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.testimony-detail {
+  max-width: 500px;
+  margin: 40px auto 0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.back-btn {
+  margin-top: 20px;
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.back-btn:hover {
+  background: darkred;
+}
+
+/* === TRANSITION ANTAR SECTION === */
+.fade-section {
+  position: relative;
+}
+
+.fade-section::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.7));
+  z-index: 1;
+}

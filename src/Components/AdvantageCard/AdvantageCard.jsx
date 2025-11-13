@@ -1,3 +1,4 @@
+/*
 import React from "react";
 import "./AdvantageCard.css";
 import { FaMicrochip, FaShieldAlt, FaHeadset, FaCheckCircle } from "react-icons/fa";
@@ -49,3 +50,4 @@ const AdvantageCard = () => {
 };
 
 export default AdvantageCard;
+*/
